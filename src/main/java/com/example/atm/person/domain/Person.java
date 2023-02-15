@@ -2,14 +2,15 @@ package com.example.atm.person.domain;
 
 import lombok.*;
 import javax.persistence.*;
+import java.time.LocalDate;
 
+@Table(name = "tb_person")
+@Entity
 @Getter
 @Setter
-@Entity
-@Table(name = "tb_person")
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
 public class Person {
 
     @Id
@@ -19,6 +20,9 @@ public class Person {
 
     @Column(name = "national_code", nullable = false, unique = true)
     private String nationalCode;
+
+    @Column(name = "bith_date",nullable = false,updatable = false)
+    private LocalDate birthDate;
 
     @Column(name = "first_name", nullable = false)
     private String firstName;
