@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 public class AccountModel {
 
-    private long personId;
+    private long ownerId;
     private String accNumber;
     private long balance;
     private long limitNormalTransfer;

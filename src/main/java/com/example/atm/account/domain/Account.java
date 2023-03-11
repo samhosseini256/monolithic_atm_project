@@ -17,8 +17,8 @@ public class Account {
     @Column(name = "id", nullable = false)
     private long id;
 
-    @Column(name = "person_id")
-    private long personId;
+    @Column(name = "owner_id",nullable = false)
+    private long ownerId;
 
     @Column(name = "account_number",nullable = false, unique = true)
     private String AccountNumber;
@@ -26,10 +26,10 @@ public class Account {
     @Column(name = "balance",nullable = false)
     private long balance;
 
-    @Column(name = "limit_normal_transfer")
+    @Column(name = "limit_normal_transfer",nullable = false)
     private long limitNormalTransfer;
 
-    @Column(name = "limit_paya_transfer")
+    @Column(name = "limit_paya_transfer",nullable = false)
     private long limitPayaTransfer;
 
 
