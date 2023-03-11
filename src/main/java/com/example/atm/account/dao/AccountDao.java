@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface AccountDao extends JpaRepository<Account,Long> {
 
-    List<Account> findAccountsByOwnerNationalCode(String nationalCode);
+    List<Account> findAccountsByAccountNumber(String accountNumber);
 
 }
