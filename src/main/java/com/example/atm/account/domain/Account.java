@@ -17,8 +17,8 @@ public class Account {
     @Column(name = "id", nullable = false)
     private long id;
 
-    @Column(name = "owner_national_code")
-    private long ownerNationalCode;
+    @Column(name = "person_id")
+    private long personId;
 
     @Column(name = "account_number",nullable = false, unique = true)
     private String AccountNumber;

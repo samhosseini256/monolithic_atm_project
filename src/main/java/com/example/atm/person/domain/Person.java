@@ -21,7 +21,7 @@ public class Person {
     @Column(name = "national_code", nullable = false, unique = true)
     private String nationalCode;
 
-    @Column(name = "bith_date",nullable = false,updatable = false)
+    @Column(name = "birth_date",nullable = false,updatable = false)
     private LocalDate birthDate;
 
     @Column(name = "first_name", nullable = false)
